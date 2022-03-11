@@ -1,9 +1,8 @@
-
+console.log('testing ie');
 let btn = document.querySelector('.toggle-menu');
 let content = document.querySelector('.navlinks');
 
-content.classList.add('active');
 
-btn.addEventListener('click',()=>{
+btn.addEventListener('click',function(){
     content.classList.toggle('active');
-})
+});

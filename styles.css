@@ -64,6 +64,7 @@ body{
 
 .toggle-menu{
     display: block;
+    cursor: pointer;
 }
 
 ul.active{
