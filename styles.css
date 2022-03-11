@@ -40,7 +40,7 @@ body{
     display: none;
 }
 
-.navlinks {
+ul.navlinks {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -67,8 +67,34 @@ body{
     cursor: pointer;
 }
 
-ul.active{
+ul.navlinks.active{
     transform: translateY(-100%);
+}
+
+@media screen and (min-width:768px){
+    
+    .toggle-menu{
+        display: none;
+    }
+
+    ul.navlinks{
+
+        all: unset;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+
+    ul.navlinks.active{
+        transform: translateY(0);
+    }
+
+    .nav-layout{
+        display: flex;
+        
+    }
+
 }
 
 
