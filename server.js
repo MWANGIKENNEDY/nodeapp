@@ -8,6 +8,8 @@ const homeScripts = readFileSync('./scripts.js');
 
 const server = http.createServer((req,res)=>{
     const url = req.url;
+
+
     if(url === '/'){
         res.writeHead(200,{'content-type':'text/html'});
         res.write(homePage)
